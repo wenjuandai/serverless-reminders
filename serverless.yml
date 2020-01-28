@@ -1,0 +1,21 @@
+service: serverless-reminders
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  region: ${opt:region, 'us-west-2'}
+  iamRoleStatements:
+  - Effect: "Allow"
+    Action:
+      - "ses:*"
+    Resource:
+      - "*"
+functions:
+  minutesReminder:
+    handler: handler.sendReminderMinutes
+    events:
+      - schedule: rate(5 minutes)
+  weekendReminder:
+    handler: handler.sendReminderWeekend
+    events:
+      - schedule: cron(30 22 ? * SUN,SAT *)
