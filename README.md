@@ -1,3 +1,10 @@
+# steps to run
+make sure aws cli is installed
+make sure nodejs is installed
+> npm install
+> sls deploy
+> sls invoke --function minutesReminder --log
+
 # serverless-node-cron
 
 An AWS Cloudwatch Event using cron syntax that triggers an SES email reminder
