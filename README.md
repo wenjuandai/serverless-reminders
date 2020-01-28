@@ -1,6 +1,8 @@
 # steps to run
 make sure aws cli is installed
+
 make sure nodejs is installed
+
 > npm install
 > sls deploy
 > sls invoke --function minutesReminder --log
