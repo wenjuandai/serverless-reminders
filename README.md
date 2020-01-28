@@ -3,6 +3,8 @@ make sure aws cli is installed
 
 make sure nodejs is installed
 
+Update email@address.com to your email in handler.js
+
 > npm install
 
 > sls deploy
