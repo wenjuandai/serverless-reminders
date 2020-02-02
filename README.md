@@ -5,6 +5,8 @@ make sure nodejs is installed
 
 Update email@address.com to your email in handler.js
 
+Verify email@address.com in AWS > SMS
+
 > npm install
 
 > sls deploy
