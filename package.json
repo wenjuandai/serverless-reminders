@@ -4,7 +4,7 @@
   "description": "A function that triggers using the serverless `schedule` event and then sends an AWS SES email reminder",
   "main": "handler.js",
   "dependencies": {
-    "aws-sdk": "^2.75.0",
+    "aws-sdk": "^2.814.0",
     "grunt-cli": "^1.3.2",
     "sequelize-cli": "^5.5.1"
   },
